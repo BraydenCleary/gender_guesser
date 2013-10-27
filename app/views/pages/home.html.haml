@@ -1,1 +1,13 @@
-.test Testing!
+%header
+  %h1 Welcome To Gender Guesser
+  %h3 Enter your height and wieght below and see if Gender Guesser correctly guesses your gender.  Please let it know if it's correct to make it smarter.
+
+  %form.user-info
+    %input.height{type: 'text', placeholder: 'Enter your height'}
+    %select.height-unit
+      %option.inches{value: 'in'} in
+      %option.centimeters{value: 'cm'} cm
+    %input.weight{type: 'text', placeholder: 'Enter your weight'}
+    %select.weight-unit
+      %option.pounds{value: 'lbs'} lb
+      %option.kilograms{value: 'kgs'} kg
