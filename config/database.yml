@@ -17,8 +17,10 @@ development:
   encoding: unicode
   database: gender_guesser_development
   pool: 5
-  username: gender_guesser
+  username: braydencleary
+  host: localhost
   password:
+
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -43,7 +45,7 @@ test:
   encoding: unicode
   database: gender_guesser_test
   pool: 5
-  username: gender_guesser
+  username: braydencleary
   password:
 
 production:
