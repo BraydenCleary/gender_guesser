@@ -4,7 +4,8 @@ To run locally:
   1) git clone https://github.com/BraydenCleary/gender_guesser.git
   2) cd gender_guesser
   3) bundle install
-  4) rake db:seed
-  5) rails s -p 3333
+  4) rake db:migrate
+  5) rake db:seed
+  6) rails s -p 3333
 
 Suggestions for improvement are appreciated!
