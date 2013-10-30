@@ -19,9 +19,9 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
-  gem "haml-rails", "~> 0.4"
 end
 
+gem "haml-rails", "~> 0.4"
 gem 'jquery-rails'
 gem 'underscore-rails'
 
