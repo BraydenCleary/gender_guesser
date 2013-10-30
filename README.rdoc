@@ -15,6 +15,7 @@ To run locally:
   3) bundle install
   4) rake db:migrate
   5) rake db:seed
-  6) rails s -p 3333
+  6) rails s -p 3000
+  7) visit localhost:3000 in your browser
 
 Suggestions for improvement are appreciated!
