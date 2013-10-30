@@ -5,7 +5,6 @@ describe Person do
 
   it { should validate_presence_of :weight }
   it { should validate_presence_of :height }
-  it { should validate_presence_of :gender }
 
   it { should validate_numericality_of :weight }
   it { should validate_numericality_of :height }
@@ -100,6 +99,23 @@ describe Person do
         let(:gender) { 3 }
         it { should_not be_valid }
         it { should have(1).error_on(:gender) }
+      end
+    end
+  end
+
+  describe "#flip_gender" do
+    context "when gender is male" do
+
+      it 'changes gender to female' do
+        person.flip_gender.should eq(0)
+      end
+    end
+
+    context "when gender is female" do
+      before { person.gender = 0 }
+
+      it 'changes gender to male' do
+        person.flip_gender.should eq(1)
       end
     end
   end
