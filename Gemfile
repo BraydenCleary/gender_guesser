@@ -7,6 +7,8 @@ gem 'rails', '3.2.12'
 
 gem 'pg'
 
+gem "libsvm-ruby-swig", "~> 0.4.0"
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -21,6 +23,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'underscore-rails'
 
 group :test do
   gem 'shoulda-matchers'
