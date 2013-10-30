@@ -4,8 +4,6 @@ In order to make the app's guesses improve over time, I used LIBSVM, a library f
 
 In doing this project, I ended up investigating many different methods of machine learning. I went from very ignorant to less than very ignorant and here are a couple of resources I found useful:
 
-[links]
-
   http://pages.cs.wisc.edu/~dyer/cs540/handouts/zhu-chap1.pdf
   http://www.csie.ntu.edu.tw/~cjlin/papers/guide/guide.pdf
   http://www.youtube.com/watch?v=vy_zQ1-F0JI
