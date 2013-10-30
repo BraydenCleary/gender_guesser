@@ -1,3 +1,5 @@
+Live at: http://guessmygender.herokuapp.com/
+
 Gender Guesser takes in your height and weight and guesses your gender based on previous user's data and sample data from (http://www.amstat.org/publications/jse/v11n2/datasets.heinz.html).
 
 In order to make the app's guesses improve over time, I used LIBSVM, a library for Support Vector Machines (http://www.csie.ntu.edu.tw/~cjlin/libsvm/). Specifically, I used the Ruby port of the LIBSVM Python SWIG (Simplified Wrapper and Interface Generator) found at https://github.com/tomz/libsvm-ruby-swig/tree/master. When time permits, I'd like to investigate the inner workings of LIBSVM moving forward and preprocess my data to improve accuracy.
