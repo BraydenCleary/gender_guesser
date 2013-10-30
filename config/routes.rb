@@ -1,5 +1,8 @@
 GenderGuesser::Application.routes.draw do
 
-  root to: 'pages#home'
+  get "/" => "pages#home"
 
+  post "/" => "people#create"
+
+  put "/people/:id" => "people#update"
 end
