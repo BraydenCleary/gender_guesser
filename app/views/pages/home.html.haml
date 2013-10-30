@@ -1,20 +1,24 @@
-%header
-  %h1 Welcome To Gender Guesser
-  %h3 Enter your height and wieght below and see if Gender I correctly guess your gender.
-  %h3 Please correct me if I'm wrong...I like learning!
+%header.row
+  %h1.headline Welcome To Gender Guesser
+  %h4.headline Enter your height and wieght below and see if I correctly guess your gender.
+  %h4.headline Please correct me if I'm wrong...I like learning!
 
+.content
   .errors
 
-  %form.user-info{action: '/', method: "post"}
-    %input.height{type: 'text', placeholder: 'Enter your height', name: 'height'}
-    %select.height-units{name: 'height-units'}
-      %option.inches{value: 'in'} in
-      %option.centimeters{value: 'cm'} cm
-    %input.weight{type: 'text', placeholder: 'Enter your weight', name: 'weight'}
-    %select.weight-units{name: 'weight-units'}
-      %option.pounds{value: 'lbs'} lb
-      %option.kilograms{value: 'kgs'} kg
-    %input.submit{type: 'submit'}
+  .form-wrapper.row
+    %form.user-info.columns.small-8.large-8.large-offset-2.small-offset-2{action: '/', method: "post"}
+      .row
+        %input.height.columns.small-8.large-9{type: 'text', placeholder: 'Enter your height', name: 'height'}
+        %select.height-units.columns.small-3.large-2{name: 'height-units'}
+          %option.inches{value: 'in'} in
+          %option.centimeters{value: 'cm'} cm
+      .row
+        %input.weight.columns.small-8.large-9{type: 'text', placeholder: 'Enter your weight', name: 'weight'}
+        %select.weight-units.columns.small-3.large-2{name: 'weight-units'}
+          %option.pounds{value: 'lbs'} lb
+          %option.kilograms{value: 'kgs'} kg
+      %input.submit.button{type: 'submit'}
 
   .guess
   .loading

@@ -14,16 +14,14 @@ gem "libsvm-ruby-swig", "~> 0.4.0"
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
-
   gem 'uglifier', '>= 1.0.3'
 end
 
 gem "haml-rails", "~> 0.4"
 gem 'jquery-rails'
 gem 'underscore-rails'
+gem 'compass-rails'
+gem 'zurb-foundation', '~> 4.0.0'
 
 group :test do
   gem 'shoulda-matchers'

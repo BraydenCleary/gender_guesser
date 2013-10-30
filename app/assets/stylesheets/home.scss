@@ -1,0 +1,46 @@
+@import "foundation";
+@import "variables";
+
+body {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.guess {
+  img {
+    height: 50px;
+    width: auto;
+  }
+}
+
+.headline {
+  @extend .columns;
+  @extend .large-8;
+  @extend .small-8;
+  @extend .large-offset-2;
+  @extend .small-offset-2;
+  line-height: 100%;
+}
+
+.height-units, .weight-units {
+  width: auto;
+  position: absolute;
+  right: 0;
+}
+
+.incorrect{
+  margin-left: 5%;
+}
+
+.errors{
+  color: $red;
+  margin-bottom: 10px;
+}
+
+.thanks{
+  color: $green;
+}
+
+.guess {
+  margin-bottom: 30px;
+}

@@ -32,6 +32,13 @@ GEM
     bourne (1.2.1)
       mocha (= 0.12.7)
     builder (3.0.4)
+    chunky_png (1.2.9)
+    compass (0.12.2)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    compass-rails (1.0.3)
+      compass (>= 0.12.2, < 0.14)
     diff-lcs (1.2.4)
     erubis (2.7.0)
     execjs (2.0.2)
@@ -40,6 +47,7 @@ GEM
     factory_girl_rails (4.2.1)
       factory_girl (~> 4.2.0)
       railties (>= 3.0.0)
+    fssm (0.2.10)
     haml (4.0.3)
       tilt
     haml-rails (0.4)
@@ -134,11 +142,14 @@ GEM
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     underscore-rails (1.5.2)
+    zurb-foundation (4.0.9)
+      sass (>= 3.2.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  compass-rails
   factory_girl_rails
   haml-rails (~> 0.4)
   jquery-rails
@@ -152,3 +163,4 @@ DEPENDENCIES
   shoulda-matchers
   uglifier (>= 1.0.3)
   underscore-rails
+  zurb-foundation (~> 4.0.0)
