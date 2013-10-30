@@ -40,6 +40,8 @@ class Person < ActiveRecord::Base
     end
   end
 
+  private
+
   def predict_gender
     unless self.gender
       #Data isn't scaled
@@ -53,15 +55,15 @@ class Person < ActiveRecord::Base
   end
 
   def construct_model(prob, param)
-    ::Model.new(prob, param)
+    Model.new(prob, param)
   end
 
   def construct_problem(data_pairs)
-    ::Problem.new([0,1], data_pairs)
+    Problem.new([0,1], data_pairs)
   end
 
   def construct_param
-    ::Parameter.new(:kernel_type => LINEAR, :C => 10)
+    Parameter.new(:kernel_type => LINEAR, :C => 10)
   end
 
   def construct_data_pairs
