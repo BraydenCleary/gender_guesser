@@ -16,9 +16,9 @@ body {
 .headline {
   @extend .columns;
   @extend .large-8;
-  @extend .small-8;
+  @extend .small-10;
   @extend .large-offset-2;
-  @extend .small-offset-2;
+  @extend .small-offset-1;
   line-height: 100%;
 }
 
