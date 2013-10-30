@@ -55,15 +55,21 @@ class Person < ActiveRecord::Base
   end
 
   def construct_model(prob, param)
-    Model.new(prob, param)
+    model = ::Model.new(prob, param)
+    Rails.logger.info('*' * 100)
+    Rails.logger.info(model.inspect)
   end
 
   def construct_problem(data_pairs)
-    Problem.new([0,1], data_pairs)
+    problem = ::Problem.new([0,1], data_pairs)
+    Rails.logger.info('*' * 100)
+    Rails.logger.info(problem.inspect)
   end
 
   def construct_param
-    Parameter.new(:kernel_type => LINEAR, :C => 10)
+    param = ::Parameter.new(:kernel_type => LINEAR, :C => 10)
+    Rails.logger.info('*' * 100)
+    Rails.logger.info(param.inspect)
   end
 
   def construct_data_pairs
