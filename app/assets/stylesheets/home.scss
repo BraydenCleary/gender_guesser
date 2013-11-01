@@ -4,6 +4,11 @@
 body {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+  background: url('fresh_snow.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .guess {
